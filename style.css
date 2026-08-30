@@ -1,0 +1,289 @@
+/* ========================= General ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ========================= Navigation ========================= */
+nav {
+    background: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav h2 span {
+    color: #93c5fd;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+/* ========================= Home ========================= */
+#home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.home-content>p:first-child {
+    color: #1e3a8a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    color: #1e3a8a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/* ========================= Buttons ========================= */
+.btn {
+    display: inline-block;
+    background: #1e3a8a;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #172554;
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    background: transparent;
+    color: #1e3a8a;
+    border: 2px solid #1e3a8a;
+}
+
+.contact-btn:hover {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* ========================= Sections ========================= */
+section {
+    padding: 80px 20px;
+}
+
+section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #1e3a8a;
+}
+
+/* ========================= About ========================= */
+#about {
+    background: white;
+}
+
+#about>p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
+}
+
+/* ========================= Skills ========================= */
+.skills-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-7px);
+    background: #1e3a8a;
+    color: white;
+}
+
+/* ========================= Projects ========================= */
+#projects {
+    background: white;
+}
+
+.projects-container {
+    max-width: 1000px;
+    margin: auto;
+    display:
+
+        grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: #f5f7fb;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card h3 {
+    color: #1e3a8a;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+/* ========================= Education ========================= */
+.education-card {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3 {
+    color: #1e3a8a;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* ========================= Contact ========================= */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    font-size: 19px;
+}
+
+/* ========================= Footer ========================= */
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ========================= Mobile ========================= */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h2 {
+        font-size: 23px;
+    }
+
+    .home-content p {
+        font-size: 17px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    section>h2 {
+        font-size: 28px;
+    }
+}
